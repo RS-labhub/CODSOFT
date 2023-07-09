@@ -1,0 +1,248 @@
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+  }
+  
+  body {
+      font-family: Tahoma, sans-serif;
+      padding: 0;
+      margin: 0;
+      
+  }
+  
+  header{
+    margin: 0;
+  }
+  
+  .landing-page { 
+      color: rgb(46, 38, 25);
+  }
+  
+  
+  h1 {
+      text-align: center;
+      padding-top: 7px;
+      font-weight: 800;
+      margin: 0;
+      letter-spacing: -1px;
+      color: inherit;
+      font-size: 70px;
+   }
+  
+  small {
+      font-size: 20px;
+      color: rgba(0, 0, 0, 0.7);
+      padding: 10px 0;
+      margin: 0px;
+      
+  }
+  
+  .center {
+      text-align: center;
+  }
+  
+  section {
+      height: 13vh;
+  }
+  
+  nav {
+    display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          justify-content: space-between;
+          color: black;
+          height: 40px;
+          padding: 1em;
+          margin: 0;
+          font-size: 25px;
+          text-align: center;
+  }
+  
+  nav ul {
+      list-style: none;
+      text-align: center;
+  }
+  
+  nav ul li {
+      display: inline-block;
+  }
+  
+  nav ul li a {
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+      color: #555;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin: 0 10px;
+  }
+  
+  .login {
+    color: rgb(255, 255, 255);
+    background-color: #aaa;
+    font-size: 30px;
+  }
+  
+  nav ul li a,
+    nav ul li a:after,
+    nav ul li a:before {
+      transition: all 2ms;
+  }
+  
+  nav ul li a:hover {
+      color: #555;
+  }
+  
+  nav.beauty ul li a {
+    position: relative;
+  }
+  
+  nav.beauty ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+  }
+  
+  nav.beauty ul li a {
+    transition: all 2s;
+  }
+  
+  nav.beauty ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+  }
+  nav.beauty ul li a:hover {
+    color: #fff;
+    z-index: 1;
+  }
+  nav.beauty ul li a:hover:after {
+    z-index: -10;
+    animation: beauty 1s forwards;
+    -webkit-animation: beauty 0.5s forwards;
+    -moz-animation: beauty 2ms forwards;
+    opacity: 1;
+  }
+  
+  @keyframes beauty {
+    0% {
+      width: 0%;
+      height: 1px;
+    }
+    50% {
+      width: 100%;
+      height: 1px;
+    }
+    100% {
+      width: 100%;
+      height: 100%;
+      background: #333;
+    }
+  }
+  
+  .bg {
+    background-image: url("https://wallpaperaccess.com/full/1696558.jpg");
+    width: 100%;
+    min-height: 380px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: absolute;
+    background-size: cover;
+  }
+  
+  .watercolor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+  }
+  
+  .watercolor .content {
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+  }
+  
+  .watercolor .image {
+    flex: 1 1 30rem; 
+  }
+  
+  .watercolor .image img {
+    width: 90%;
+    height: 90%;
+    padding: 1rem;
+    animation: float 3s linear infinite; 
+  }
+  
+  @keyframes float {
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+    50% {
+        transform: translateY(3rem);
+    }
+  }
+  
+  .watercolor .content h3 {
+    font-size: 5rem;
+    color: white;
+  }
+  
+  .yellowColor {
+    color: rgb(220, 220, 82);
+  }
+  
+  .mainfont {
+    font-family: "Jacques Francois Shadow", cursive;
+  }
+  
+  .watercolor .content {
+    font-size: 1.7rem;
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem;
+    color: #666;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    border: 0.2rem solid white;
+    color: white;
+    cursor: pointer;
+    font-size: 2.7rem;
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin: 1rem 1rem 0 0;
+  }
+  
+  .btn:hover {
+    color: #fff;
+  }
+  
+  @media (max-width: 450px) {
+    html {
+        font-size: 50%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        text-align: center;
+    }
+  }
