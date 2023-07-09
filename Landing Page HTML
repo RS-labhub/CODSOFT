@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="06_styles.css">
+    </head>
+
+    <body>
+            <section class="bg">
+
+            <section class="landing-page">
+                <h1>The World of Artists</h1>
+                <p class="center"><small>A page where every artist lands</small></p>
+                <nav class="beauty">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#login" class="login"><strong>Login</strong></a></li>
+                    </ul>
+                </nav>
+            </section>
+            <hr>
+            <section class="watercolor" id="watercolor">
+            <div class="content">
+                
+                <h3 class="mainfont">
+                    The A<span class="yellowColor">rt</span>ists in culture
+                </h3>
+                 <h3>
+                    The A<span class="yellowColor">rt</span>s that give you C<span class="yellowColor">almness</span>
+                </h3> 
+
+                <a href="# " class="btn">REGISTER NOW</a>
+            </div>
+            
+    
+            <div class="image">
+                <img src="https://wallpaperaccess.com/full/5475165.jpg">
+            </div>
+        </section>
+    </body> 
+</html>
