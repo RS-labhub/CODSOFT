@@ -20,7 +20,7 @@
 }
 
 .calculator {
-    border-color: #010c15 /* #ecf0f3 */;
+    border-color: #010c15;
     background-color: #fff;
     padding: 15px;
     border-radius: 30px;
